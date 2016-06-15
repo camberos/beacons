@@ -3,8 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/digital/AppData/Roaming/NetBeans/8.1/apache-tomcat-8.0.27.0_base/webapps/contextual-app/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/digital/AppData/Roaming/NetBeans/8.1/apache-tomcat-8.0.27.0_base/webapps/contextual-app/welcome.jsp</file>
+            <file>file:/C:/Users/digital/AppData/Roaming/NetBeans/8.1/apache-tomcat-8.0.27.0_base/webapps/contextual-app/login.jsp</file>
+            <file>file:/C:/Users/digital/AppData/Roaming/NetBeans/8.1/apache-tomcat-8.0.27.0_base/webapps/contextual-app/admin/index.jsp</file>
         </group>
     </open-files>
 </project-private>

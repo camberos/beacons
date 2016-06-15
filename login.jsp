@@ -68,7 +68,7 @@ String home = "/contextual-app/";
                 <section class="panel panel-default">
                     <div class="panel-heading">
                         <div>
-                            <img src="images/Atlantic-Group-logo.png" alt="proton-logo">
+                            <img src="images/logo-white.png" alt="Camberos-Logo">
                             
                         </div>
                     </div>
@@ -84,7 +84,7 @@ String home = "/contextual-app/";
                         </li>
                         <li class="list-group-item">
                             <span class="login-text">
-                                Login with your Atlantic Group Email
+                                Login with your username or email
                             </span>
                             <div class="form-group">
                                 <label for="email">Email</label>
