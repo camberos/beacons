@@ -1,193 +1,113 @@
 <%
 String home = "/contextual-app/";
 %>
-<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
-<!-- BEGIN HEAD -->
-<head>
-	<meta charset="utf-8" />
-	<title>MailHub | Login Page</title>
-	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-	<meta content="" name="description" />
-	<meta content="Web Global" name="author" />
-	<!-- BEGIN GLOBAL MANDATORY STYLES -->
-	<link href="<%=home%>assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-	<link href="<%=home%>assets/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
-	<link href="<%=home%>assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-	<link href="<%=home%>assets/css/style-metro.css" rel="stylesheet" type="text/css"/>
-	<link href="<%=home%>assets/css/style.css" rel="stylesheet" type="text/css"/>
-	<link href="<%=home%>assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
-	<link href="<%=home%>assets/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
-	<link href="<%=home%>assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
-	<link rel="stylesheet" type="text/css" href="<%=home%>assets/plugins/select2/select2_metro.css" />
-	<!-- END GLOBAL MANDATORY STYLES -->
-	<!-- BEGIN PAGE LEVEL STYLES -->
-	<link href="<%=home%>assets/css/pages/login.css" rel="stylesheet" type="text/css"/>
-	<!-- END PAGE LEVEL STYLES -->
-	<link rel="shortcut icon" href="favicon.ico" />
-</head>
-<!-- END HEAD -->
-<!-- BEGIN BODY -->
-<body class="login">
-	<!-- BEGIN LOGO -->
-	<div class="logo">
-		
-	</div>
-	<!-- END LOGO -->
-	<!-- BEGIN LOGIN -->
-	<div class="content">
-		<!-- BEGIN LOGIN FORM -->
-		<form class="form-vertical login-form" action="j_security_check" method="post">
-                    <div class="span12"><img src="<%=home%>assets/img/mailhub.png" alt="mailhub"/></div>
-			<h3 class="form-title">Login to your account</h3>
-			<div class="alert alert-error hide">
-				<button class="close" data-dismiss="alert"></button>
-				<span>Enter any username and password.</span>
-			</div>
-			<div class="control-group">
-				<!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
-				<label class="control-label visible-ie8 visible-ie9">Username</label>
-				<div class="controls">
-					<div class="input-icon left">
-						<i class="icon-user"></i>
-						<input class="m-wrap placeholder-no-fix" type="text" autocomplete="off" placeholder="Username" name="j_username"/>
-					</div>
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label visible-ie8 visible-ie9">Password</label>
-				<div class="controls">
-					<div class="input-icon left">
-						<i class="icon-lock"></i>
-						<input class="m-wrap placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="j_password"/>
-					</div>
-				</div>
-			</div>
-			<div class="form-actions">
-				<label class="checkbox">
-				<input type="checkbox" name="remember" value="1"/> Remember me
-				</label>
-				<button type="submit" class="btn black pull-right">
-				Login <i class="m-icon-swapright m-icon-white"></i>
-				</button>            
-			</div>
-			<div class="forget-password">
-				<h4>Forgot your password ?</h4>
-				<p>
-					no worries, click <a href="javascript:;"  id="forget-password">here</a>
-					to reset your password.
-				</p>
-			</div>
-			
-		</form>
-		<!-- END LOGIN FORM -->        
-		<!-- BEGIN FORGOT PASSWORD FORM -->
-		<form class="form-vertical forget-form" action="index.html" method="post">
-			<h3 >Forget Password ?</h3>
-			<p>Enter your e-mail address below to reset your password.</p>
-			<div class="control-group">
-				<div class="controls">
-					<div class="input-icon left">
-						<i class="icon-envelope"></i>
-						<input class="m-wrap placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email" />
-					</div>
-				</div>
-			</div>
-			<div class="form-actions">
-				<button type="button" id="back-btn" class="btn">
-				<i class="m-icon-swapleft"></i> Back
-				</button>
-				<button type="submit" class="btn grey pull-right">
-				Submit <i class="m-icon-swapright m-icon-white"></i>
-				</button>            
-			</div>
-		</form>
-		<!-- END FORGOT PASSWORD FORM -->
-		<!-- BEGIN REGISTRATION FORM -->
-		<form class="form-vertical register-form" action="index.html" method="post">
-			<h3 >Sign Up</h3>
-			<p>Enter your personal details below:</p>
-			<div class="control-group">
-				<label class="control-label visible-ie8 visible-ie9">Full Name</label>
-				<div class="controls">
-					<div class="input-icon left">
-						<i class="icon-font"></i>
-						<input class="m-wrap placeholder-no-fix" type="text" placeholder="Full Name" name="fullname"/>
-					</div>
-				</div>
-			</div>
-			<div class="control-group">
-				<!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
-				<label class="control-label visible-ie8 visible-ie9">Email</label>
-				<div class="controls">
-					<div class="input-icon left">
-						<i class="icon-envelope"></i>
-						<input class="m-wrap placeholder-no-fix" type="text" placeholder="Email" name="email"/>
-					</div>
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label visible-ie8 visible-ie9">Address</label>
-				<div class="controls">
-					<div class="input-icon left">
-						<i class="icon-ok"></i>
-						<input class="m-wrap placeholder-no-fix" type="text" placeholder="Address" name="address"/>
-					</div>
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label visible-ie8 visible-ie9">City/Town</label>
-				<div class="controls">
-					<div class="input-icon left">
-						<i class="icon-location-arrow"></i>
-						<input class="m-wrap placeholder-no-fix" type="text" placeholder="City/Town" name="city"/>
-					</div>
-				</div>
-			</div>
-			
-		</form>
-		<!-- END REGISTRATION FORM -->
-	</div>
-	<!-- END LOGIN -->
-	<!-- BEGIN COPYRIGHT -->
-	<div class="copyright">
-		2013 @ MailHub Powered by Webglobal.
-	</div>
-	<!-- END COPYRIGHT -->
-	<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-	<!-- BEGIN CORE PLUGINS -->   <script src="<%=home%>assets/plugins/jquery-1.10.1.min.js" type="text/javascript"></script>
-	<script src="<%=home%>assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
-	<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
-	<script src="<%=home%>assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
-	<script src="<%=home%>assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="<%=home%>assets/plugins/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js" type="text/javascript" ></script>
-	<!--[if lt IE 9]>
-	<script src="<%=home%>assets/plugins/excanvas.min.js"></script>
-	<script src="<%=home%>assets/plugins/respond.min.js"></script>  
-	<![endif]-->   
-	<script src="<%=home%>assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-	<script src="<%=home%>assets/plugins/jquery.blockui.min.js" type="text/javascript"></script>  
-	<script src="<%=home%>assets/plugins/jquery.cookie.min.js" type="text/javascript"></script>
-	<script src="<%=home%>assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript" ></script>
-	<!-- END CORE PLUGINS -->
-	<!-- BEGIN PAGE LEVEL PLUGINS -->
-	<script src="<%=home%>assets/plugins/jquery-validation/dist/jquery.validate.min.js" type="text/javascript"></script>	
-	<script type="text/javascript" src="<%=home%>assets/plugins/select2/select2.min.js"></script>     
-	<!-- END PAGE LEVEL PLUGINS -->
-	<!-- BEGIN PAGE LEVEL SCRIPTS -->
-	<script src="<%=home%>assets/scripts/app.js" type="text/javascript"></script>
-	<script src="<%=home%>assets/scripts/login.js" type="text/javascript"></script> 
-	<!-- END PAGE LEVEL SCRIPTS --> 
-	<script>
-		jQuery(document).ready(function() {     
-		  App.init();
-		  Login.init();
-		
-		});
-	</script>
-	<!-- END JAVASCRIPTS -->
-</body>
-<!-- END BODY -->
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7 lt-ie10"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 lt-ie10"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <title>Camberos Contextual | Welcome</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="styles/bootstrap.css">
+
+
+        <!-- Proton CSS: -->
+        <link rel="stylesheet" href="styles/proton.css">
+        <link rel="stylesheet" href="styles/vendor/animate.css">
+
+        <!-- adds CSS media query support to IE8   -->
+        <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+            <script src="scripts/vendor/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Fonts CSS: -->
+        <link rel="stylesheet" href="styles/font-awesome.css" type="text/css" />
+        <link rel="stylesheet" href="styles/font-titillium.css" type="text/css" />
+
+        <!-- Common Scripts: -->
+        <script>
+        (function () {
+          var js;
+          if (typeof JSON !== 'undefined' && 'querySelector' in document && 'addEventListener' in window) {
+            js = '//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js';
+          } else {
+            js = '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js';
+          }
+          document.write('<script src="' + js + '"><\/script>');
+        }());
+        </script>
+        <script src="scripts/vendor/modernizr.js"></script>
+        <script src="scripts/vendor/jquery.cookie.js"></script>
+    </head>
+
+    <body class="login-page">
+        
+        <script>
+	        var theme = $.cookie('protonTheme') || 'default';
+	        $('body').removeClass (function (index, css) {
+	            return (css.match (/\btheme-\S+/g) || []).join(' ');
+	        });
+	        if (theme !== 'default') $('body').addClass(theme);
+        </script>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        
+        <form action="j_security_check" method="post">
+            <section class="wrapper scrollable animated fadeInDown">
+                <section class="panel panel-default">
+                    <div class="panel-heading">
+                        <div>
+                            <img src="images/Atlantic-Group-logo.png" alt="proton-logo">
+                            
+                        </div>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="welcome-text">
+                                Camberos Contextual Computing
+                          </span>
+                            <span class="member">
+                                Not a User?
+                            </span>
+                            <a href="javascript:;">Request Access here</a>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="login-text">
+                                Login with your Atlantic Group Email
+                            </span>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input class="form-control input-lg" id="j_username" placeholder="Email" name="j_username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input class="form-control input-lg" type="password" autocomplete="off" placeholder="Password" name="j_password">
+                               
+
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="panel-footer">
+                        <button type="submit" class="btn btn-lg btn-success">
+                            LOGIN TO YOUR ACCOUNT
+                        </button>   
+                        
+                        <br>
+                        <a class="forgot" href="javascript:;">Forgot Your Password?</a>
+                    </div>
+                </section>
+            </section>
+        </form>
+    </body>
 </html>

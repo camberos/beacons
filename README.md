@@ -1,4 +1,1 @@
-mailinglists
-============
-
-Custom made MailingLists webapp, Java based.
+Project Context-web @2016
