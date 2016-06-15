@@ -1,5 +1,5 @@
 <%
-String home = "/MailingLists/";
+String home = "/contextual-app/";
 %>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->

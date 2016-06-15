@@ -8,5 +8,5 @@
 mntb.setDesconectar();
 session.invalidate(); 
 
-response.sendRedirect("/MailingLists");
+response.sendRedirect(request.getContextPath());
 %>
