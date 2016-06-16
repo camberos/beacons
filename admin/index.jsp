@@ -8,7 +8,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
-        <title>Camberos Group - Dashboard</title>
+        <title>Dashboard</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -234,9 +234,6 @@
                     <i class="icon-reorder"></i>
                 </a>
                 <section class="user-menu-wrapper">
-                    <a href="javascript:;" data-expand=".theme-view" class="view-menu-access">
-                        <i class="icon-eye-open"></i>
-                    </a>
                     <a href="javascript:;" data-expand=".messages-view" class="messages-access">
                         <i class="icon-envelope-alt"></i>
                     </a>
@@ -245,77 +242,6 @@
                         <div class="menu-counter">6</div>
                     </a>
                 </section>
-
-                <div class="panel panel-default nav-view theme-view">
-                    <div class="arrow user-menu-arrow"></div>
-                    <div class="panel-heading">
-                        <i class="icon-eye-open"></i>
-                        <span>Color Scheme</span>
-                        <a href="javascript:;" class="close-user-menu"><i class="icon-remove"></i></a>
-                    </div>
-                    <ul class="list-group">
-                        <li class="list-group-item" data-theme="default">
-                            <a href="javascript:;">
-                                <i><b class="dark"></b></i>
-                                <div class="text-holder">
-                                    <span class="title-text">
-                                        Dark
-                                    </span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="list-group-item" data-theme="theme-light">
-                            <a href="javascript:;">
-                                <i><b></b></i>
-                                <div class="text-holder">
-                                    <span class="title-text">
-                                        Light
-                                    </span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="list-group-item" data-theme="theme-pastel">
-                            <a href="javascript:;">
-                                <i><b class="pastel"></b></i>
-                                <div class="text-holder">
-                                    <span class="title-text">
-                                        Pastel Green
-                                    </span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="list-group-item" data-theme="theme-pastel-marine">
-                            <a href="javascript:;">
-                                <i><b class="pastel-marine"></b></i>
-                                <div class="text-holder">
-                                    <span class="title-text">
-                                        Pastel Marine
-                                    </span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="list-group-item" data-theme="theme-terminal">
-                            <a href="javascript:;">
-                                <i><b class="terminal"></b></i>
-                                <div class="text-holder">
-                                    <span class="title-text">
-                                        Terminal
-                                    </span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="list-group-item" data-theme="theme-rio">
-                            <a href="javascript:;">
-                                <i><b class="rio"></b></i>
-                                <div class="text-holder">
-                                    <span class="title-text">
-                                        Rio
-                                    </span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
 
                 <div class="panel panel-default nav-view messages-view">
                     <div class="arrow user-menu-arrow"></div>
@@ -453,7 +379,7 @@
             </nav>
             <section class="title-bar">
                 <div>
-                    <span><img src="images/Atlantic-Group-logo.png" width="250" height="125"></span>
+                    <span><img src="../images/logo-white.png"></span>
                     <nav class="dashboard-menu">
                         <a href="javascript:;">
                             <i class="icon-cog toggle-widget-setup"></i>
@@ -474,31 +400,25 @@
                     <li>
                         <a href="javascript:;">
                             <i class="icon-bar-chart"></i>
-                            <span>Graphs</span>
+                            <span>URL Beacons</span>
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
                             <i class="icon-calendar-empty"></i>
-                            <span>Calendar</span>
+                            <span>SMS</span>
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
                             <i class="icon-map-marker"></i>
-                            <span>Directory</span>
+                            <span>Analytics</span>
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
                             <i class="icon-cloud"></i>
-                            <span>Drive</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="icon-microphone"></i>
-                            <span>Communications</span>
+                            <span>Settings</span>
                         </a>
                     </li>
                 </ul>
