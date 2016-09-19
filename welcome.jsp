@@ -7,7 +7,6 @@
 <html>
 <body>
 <%
-               
                 mtbl.setConectar();
                     ResultSet rs=mtbl.getQuery("select * from users where user_name='"+request.getRemoteUser()+"';");
 		mtbl.setDesconectar(); 
@@ -18,21 +17,24 @@
 
                 session.setAttribute("name",name);			
                 session.setAttribute("last_name",last_name);
-
+                
+                // Administrator
 		if (request.isUserInRole("admin")) 
-		{    // Administrator
-			response.sendRedirect("admin/index.jsp");
+		{    
+                    	response.sendRedirect("admin/index.jsp");
 			return;
 		}
+                // User
 		if (request.isUserInRole("user")) 
-		{    // User
-			response.sendRedirect("user/index.jsp");
-			return;
+		{    
+		//	response.sendRedirect("user/index.jsp");
+		//	return;
 		}
+                // Robot
 		if (request.isUserInRole("robot")) 
-		{    // Robot
-			response.sendRedirect("robot/index.jsp");
-			return;
+		{    
+		//	response.sendRedirect("robot/index.jsp");
+		//	return;
 		}
 %>
 </body>

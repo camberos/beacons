@@ -3,9 +3,9 @@
     import="manejodb.ManejadoresTablas"
     errorPage="error.jsp" %>
 
-<jsp:useBean id="mntb" scope="session" class="manejodb.ManejadoresTablas" ></jsp:useBean>
+<jsp:useBean id="mtbl" scope="session" class="manejodb.ManejadoresTablas" ></jsp:useBean>
 <% 
-mntb.setDesconectar();
+mtbl.setDesconectar();
 session.invalidate(); 
 
 response.sendRedirect(request.getContextPath());
